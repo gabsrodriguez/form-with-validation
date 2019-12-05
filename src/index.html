@@ -30,6 +30,7 @@
           <div class="col-3">
             <label for="00000000000">CVC</label>
             <input
+              id="inputAlert2"
               type="text-3"
               class="form-control"
               placeholder="00000000000"
@@ -41,10 +42,11 @@
           </div>
         </div>
 
-        <div id="inputAlert2" class="form-row mt-3">
+        <div class="form-row mt-3">
           <div class="col">
             <label>First Name</label>
             <input
+              id="inputAlert3"
               type="text"
               class="form-control"
               placeholder="First Name"
@@ -134,8 +136,17 @@
         e.preventDefault();
         document.querySelector("#alert1").innerHTML =
           '<div class="alert alert-danger" role="alert">Some fields are missing!</div>';
+
         if (document.querySelector("#inputAlert1").value == "") {
           document.querySelector("#inputAlert1").style.borderColor = "red";
+        }
+
+        if (document.querySelector("#inputAlert2").value == "") {
+          document.querySelector("#inputAlert2").style.borderColor = "red";
+        }
+
+        if (document.querySelector("#inputAlert3").value == "") {
+          document.querySelector("#inputAlert3").style.borderColor = "red";
         }
       });
     </script>

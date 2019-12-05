@@ -20,7 +20,12 @@
         <div class="form-row">
           <div class="col-5">
             <label for="xxxxxxxxxxx">Card Number</label>
-            <input type="text" class="form-control" placeholder="xxxxxxxxxxx" />
+            <input
+              id="inputAlert1"
+              type="text"
+              class="form-control"
+              placeholder="xxxxxxxxxxx"
+            />
           </div>
           <div class="col-3">
             <label for="00000000000">CVC</label>
@@ -36,7 +41,7 @@
           </div>
         </div>
 
-        <div class="form-row mt-3">
+        <div id="inputAlert2" class="form-row mt-3">
           <div class="col">
             <label>First Name</label>
             <input
@@ -59,7 +64,7 @@
           </div>
         </div>
 
-        <div class="form-row mt-3">
+        <div id="inputAlert3" class="form-row mt-3">
           <div class="col-md-6 mb-3">
             <label>City</label>
             <input type="text" class="form-control" placeholder="City" />
@@ -80,7 +85,7 @@
           </div>
         </div>
 
-        <div class="form-row">
+        <div id="inputAlert3" class="form-row">
           <div class="col-3">
             <div class="bg-secondary rounded">
               <div class="form-check form-check-inline">
@@ -129,6 +134,9 @@
         e.preventDefault();
         document.querySelector("#alert1").innerHTML =
           '<div class="alert alert-danger" role="alert">Some fields are missing!</div>';
+        if (document.querySelector("#inputAlert1").value == "") {
+          document.querySelector("#inputAlert1").style.borderColor = "red";
+        }
       });
     </script>
 

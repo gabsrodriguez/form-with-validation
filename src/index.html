@@ -38,7 +38,12 @@
           </div>
           <div class="col-4">
             <label for="Amount">Amount</label>
-            <input type="text" class="form-control" placeholder="Amount" />
+            <input
+              id="inputAlert3"
+              type="text"
+              class="form-control"
+              placeholder="Amount"
+            />
           </div>
         </div>
 
@@ -46,34 +51,36 @@
           <div class="col">
             <label>First Name</label>
             <input
-              id="inputAlert3"
+              id="inputAlert4"
               type="text"
               class="form-control"
               placeholder="First Name"
-              value="Jordan"
-              required
             />
           </div>
           <div class="col">
             <label f>Last Name</label>
             <input
+              id="inputAlert5"
               type="text"
               class="form-control"
               placeholder="Last Name"
-              value="Aguiriano"
-              required
             />
           </div>
         </div>
 
-        <div id="inputAlert3" class="form-row mt-3">
+        <div class="form-row mt-3">
           <div class="col-md-6 mb-3">
             <label>City</label>
-            <input type="text" class="form-control" placeholder="City" />
+            <input
+              id="inputAlert6"
+              type="text"
+              class="form-control"
+              placeholder="City"
+            />
           </div>
           <div class="col-md-3 mb-3">
             <label for="exampleFormControlSelect1">Example select</label>
-            <select class="form-control" id="exampleFormControlSelect1">
+            <select class="form-control" id="inputAlert7">
               <option>Florida</option>
               <option>California</option>
               <option>New York</option>
@@ -83,11 +90,16 @@
           </div>
           <div class="col-md-3 mb-3">
             <label>Zip</label>
-            <input type="text" class="form-control" placeholder="zip" />
+            <input
+              id="inputAlert8"
+              type="text"
+              class="form-control"
+              placeholder="zip"
+            />
           </div>
         </div>
 
-        <div id="inputAlert3" class="form-row">
+        <div iclass="form-row">
           <div class="col-3">
             <div class="bg-secondary rounded">
               <div class="form-check form-check-inline">
@@ -147,6 +159,21 @@
 
         if (document.querySelector("#inputAlert3").value == "") {
           document.querySelector("#inputAlert3").style.borderColor = "red";
+        }
+        if (document.querySelector("#inputAlert4").value == "") {
+          document.querySelector("#inputAlert4").style.borderColor = "red";
+        }
+        if (document.querySelector("#inputAlert5").value == "") {
+          document.querySelector("#inputAlert5").style.borderColor = "red";
+        }
+        if (document.querySelector("#inputAlert6").value == "") {
+          document.querySelector("#inputAlert6").style.borderColor = "red";
+        }
+        if (document.querySelector("#inputAlert7").value == "") {
+          document.querySelector("#inputAlert7").style.borderColor = "red";
+        }
+        if (document.querySelector("#inputAlert8").value == "") {
+          document.querySelector("#inputAlert8").style.borderColor = "red";
         }
       });
     </script>
